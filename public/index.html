@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>QuickBasket</title>
+    <style>
+        body {
+            margin: 0;
+            background: #f4f6fa;
+            color: #172b40;
+            font: 16px system-ui
+        }
+
+        header {
+            background: #142c40;
+            color: white;
+            padding: 20px
+        }
+
+        main {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px
+        }
+
+        section,
+        article {
+            background: white;
+            border: 1px solid #dae3ec;
+            border-radius: 12px;
+            padding: 18px;
+            margin: 12px 0
+        }
+
+        nav {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap
+        }
+
+        button,
+        input {
+            font: inherit;
+            padding: 10px;
+            border-radius: 7px;
+            border: 1px solid #a9bac8;
+            margin: 4px
+        }
+
+        button {
+            background: #176b63;
+            color: white;
+            cursor: pointer;
+            border: 0
+        }
+
+        button:disabled {
+            opacity: .5;
+            cursor: wait
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 12px
+        }
+
+        input {
+            max-width: 90%
+        }
+
+        .notice {
+            background: #e6f2f1;
+            padding: 12px;
+            overflow-wrap: anywhere
+        }
+
+        small {
+            color: #64748b
+        }
+
+        h1 {
+            margin: 0
+        }
+
+        h2 {
+            margin-top: 0
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>QuickBasket</h1>
+        <div>Shopping cart & safe checkout</div>
+    </header>
+    <main id="root"></main>
+    <script src="/vendor/react/react.production.min.js"></script>
+    <script src="/vendor/react-dom/react-dom.production.min.js"></script>
+    <script src="/app.js"></script>
+</body>
+
+</html>
